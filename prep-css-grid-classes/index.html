@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 450px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+<h1>Indiana Jones</h1>
+<div class="container">
+  <div class="row">
+    <div class="column"><img src="images/raiders.jpg">
+      <h3>Raiders of the Lost Ark</h3>
+      <p>Dr. Indiana Jones, a renowned archeologist and expert in the occult, is hired by the U.S. Government to find the ark of
+    the covenant, which is believed to still hold the Ten Commandments. Unfortunately, Hitler's agents are also after the
+    ark. Indy and his ex-flame Marion escape from various close scrapes in a quest that takes them from Nepal to Cairo.
+      </p>
+    </div>
+    <div class="column"><img src="images/temple.jpg">
+      <h3>Temple of Doom</h3>
+      <p>
+        The second of the Lucas/Spielberg Indiana Jones epics is set a year or so before the events in Raiders of the Lost Ark.
+        Indy needs to retrieve a precious gem and several kidnapped young boys on behalf of a remote East Indian village. This
+        time he teams up with a night club singer and a 12-year old boy.
+      </p>
+    </div>
+    <div class="column"><img src="images/crusade.png">
+      <h3>The Last Crusade</h3>
+      <p>An art collector appeals to Jones to embark on a search for the Holy Grail. He learns that another archaeologist has
+      disappeared while searching for the precious goblet, and the missing man is his own father, Dr. Henry Jones. The
+      artifact is much harder to find than they expected, and its powers are too much for those impure in heart.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
